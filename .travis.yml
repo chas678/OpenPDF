@@ -4,5 +4,6 @@ jdk:
   - openjdk10
   - openjdk9
   - openjdk8
+  - openjdk7
 
 install: mvn install -Dgpg.skip
