@@ -25,7 +25,6 @@ class PdfTextExtractorTest {
         assertThat(getString("HelloWorldMeta.pdf", 0), is(emptyString()));
     }
 
-
     @Test
     void testConcatenateWatermark() throws Exception {
         String result = getString("merge-acroforms.pdf", 5);

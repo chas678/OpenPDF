@@ -68,6 +68,24 @@
                     </instructions>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+                <!--<groupId>randoop</groupId>-->
+                <!--<artifactId>randoop-maven-plugin</artifactId>-->
+                <!--<version>3.1.5</version>-->
+                <!--<configuration>-->
+                    <!--<packageName>com.lowagie</packageName>-->
+                    <!--<timeoutInSeconds>120</timeoutInSeconds>-->
+                <!--</configuration>-->
+                <!--<executions>-->
+                    <!--<execution>-->
+                        <!--<id>generate-tests</id>-->
+                        <!--<goals>-->
+                            <!--<goal>gentests</goal>-->
+                        <!--</goals>-->
+                        <!--<phase>generate-test-sources</phase>-->
+                    <!--</execution>-->
+                <!--</executions>-->
+            <!--</plugin>-->
         </plugins>
     </build>
 </project>
