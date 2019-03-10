@@ -42,7 +42,7 @@
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        
+
         <bouncycastle.version>1.61</bouncycastle.version>
         <hamcrest.version>2.1</hamcrest.version>
         <java-module-name>com.github.librepdf.openpdf.parent</java-module-name>
@@ -59,6 +59,7 @@
         <maven.surefire.plugin.version>2.22.1</maven.surefire.plugin.version>
         <maven.test.failure.ignore>false</maven.test.failure.ignore>
         <mockito.version>2.25.0</mockito.version>
+        <junit.version>4.12</junit.version>
     </properties>
 
 
@@ -275,6 +276,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-library</artifactId>
             <version>${hamcrest.version}</version>
@@ -284,6 +291,18 @@
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-core</artifactId>
             <version>${hamcrest.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-migrationsupport</artifactId>
+            <version>${jupiter.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
